@@ -11,7 +11,8 @@ void GameWindow::game_init()
 
 void game_play()
 {
-    while (ModelRepositary.shared) {
+    GameModel& model = dynamic_cast<GameModel&> (ModelRepositary::shared.accessModel("game"));
+    while (!model.isStopGame) {
         game_update();
         game_draw();
     }

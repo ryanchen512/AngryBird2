@@ -8,9 +8,9 @@ class Model
 {
 friend class ModelRepositary;
 public:
+    virtual ~Model();
 protected:
     Model();
-    ~Model();
 };
 
 class ModelRepositary
@@ -21,7 +21,7 @@ public:
     template <typename modelType>
     void pushModel(string key);
     void popModel(string key);
-    ~ModelRepositary();
+    virtual ~ModelRepositary();
 private:
     map<string, Model&> modelMap;
     ModelRepositary();
