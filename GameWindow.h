@@ -1,5 +1,10 @@
-#include "Scene.h"
-
+#include "Scenes.h"
+#include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_acodec.h>
+#include <vector>
+#include <list>
+#include <time.h>
+float FPS=60.0;
 class GameWindow
 {
 public:
