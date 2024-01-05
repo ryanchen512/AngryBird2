@@ -2,5 +2,5 @@
 
 class PhysicalObject: GameObject
 {
-    
-}
+    static float gravity;
+};
