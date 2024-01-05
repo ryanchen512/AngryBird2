@@ -1,11 +1,12 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 #include <iostream>
+#include "global.h"
 using namespace std;
 
 class GameObject
 {
-public: 
+public:
     virtual void update();
     virtual void Draw();
     virtual pair<float, float> getPosition();

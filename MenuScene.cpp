@@ -6,14 +6,11 @@ void MenuScene::process_event(){
     if(event.type == ALLEGRO_EVENT_DISPLAY_CLOSE){
         model.isStopGame=1;
     }
-        
+
 }
 void MenuScene::update(){
 
 }
 void MenuScene::draw(){
-
-}
-void MenuScene::destroy(){
 
 }

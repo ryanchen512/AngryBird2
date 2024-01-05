@@ -2,7 +2,7 @@
 #define Model_H
 #include <map>
 #include <string>
-
+#include "global.h"
 
 using namespace std;
 

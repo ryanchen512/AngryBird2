@@ -2,11 +2,7 @@
 #include "Scenes.h"
 #include "Model.h"
 #include "global.h"
-ALLEGRO_DISPLAY* display = NULL;
-ALLEGRO_EVENT_QUEUE *event_queue = NULL;
-ALLEGRO_TIMER *fps = NULL;
-bool key_state[ALLEGRO_KEY_MAX] = {false};
-const char *title = "angrybird";
+
 void GameWindow::game_init()
 {
     printf( "Game Initializing...\n" );
@@ -36,8 +32,8 @@ void GameWindow::game_init()
     fps  = al_create_timer( 1.0 / FPS );
     al_register_event_source(event_queue, al_get_timer_event_source( fps )) ;
     // initialize the icon on the display
-    ALLEGRO_BITMAP *icon = al_load_bitmap("./image/395637DD-F8DB-4529-ACDD-80206D72189D.png");
-    al_set_display_icon(display, icon);
+    //ALLEGRO_BITMAP *icon = al_load_bitmap("./image/395637DD-F8DB-4529-ACDD-80206D72189D.png");
+    //al_set_display_icon(display, icon);
 
     Scene initScene* = dynamic_cast<Scene*> (new MenuScene);
     model.currentScene = initScene;

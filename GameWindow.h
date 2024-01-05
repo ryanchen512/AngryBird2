@@ -3,14 +3,7 @@
 #include "Scenes.h"
 #include "Model.h"
 #include "GameWindow.h"
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_image.h>
-#include <allegro5/allegro_primitives.h>
-#include <allegro5/allegro_font.h>
-#include <allegro5/allegro_ttf.h>
-
+#include "global.h"
 #include <vector>
 #include <list>
 #include <time.h>
@@ -28,6 +21,7 @@ class GameWindow
 public:
     void game_init();
     void game_play();
+    void game_destroy();
 private:
     GameModel &model= dynamic_cast<GameModel&> (ModelRepositary::shared.accessModel("game"));
 ;

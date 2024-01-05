@@ -2,7 +2,7 @@
 #define Scene_H
 #include <vector>
 #include "GameObjects.h"
-
+#include "global.h"
 using namespace std;
 
 class Scene
@@ -16,7 +16,12 @@ public:
 };
 
 class MenuScene: Scene {
-private:
+    public:
+    void init();
+    void update();
+    void process_event();
+    void draw();
+    private:
     vector<GameObject> objects;
 };
 
