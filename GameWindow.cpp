@@ -13,9 +13,11 @@ void GameWindow::game_init()
 
 void GameWindow::game_play()
 {
-    while (!model.isStopGame) {
+    while (!model.isStopGame){
+        currentScene.process_event();
         currentScene.update();
         currentScene.draw();
     }
+    
 }
 
