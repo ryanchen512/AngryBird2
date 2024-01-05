@@ -3,6 +3,6 @@ class GameObject
 {
 public: 
     void update();
-private:
-
+    void Draw();
+    pair<float, float> getPosition();
 }
