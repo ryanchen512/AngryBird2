@@ -1,10 +1,10 @@
 #include <iostream>
+#include <allegro5/allegro.h>
 
 using namespace std;
 
 int main()
 {
-    cout << "mm";
-    cout << "kk";
+    
     return 0;
 }
