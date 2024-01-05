@@ -3,8 +3,10 @@
 void MenuScene::process_event(){
     ALLEGRO_EVENT event;
     al_wait_for_event(event_queue, &event);
-    if(event.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
-        return GAME_TERMINATE;
+    if(event.type == ALLEGRO_EVENT_DISPLAY_CLOSE){
+        model.isStopGame=1;
+    }
+        
 }
 void MenuScene::update(){
 
