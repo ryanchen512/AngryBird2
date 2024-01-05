@@ -1,3 +1,5 @@
+#include "Scene.h"
+
 class GameWindow
 {
 public:
@@ -7,7 +9,12 @@ public:
     void game_draw();
 private:
     Scene currentScene;
-}
+};
 
+class GameModel: Model
+{
+public:
+    bool isStopGame = false;
+};
 
 
