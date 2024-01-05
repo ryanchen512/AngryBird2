@@ -1,3 +1,5 @@
+#ifndef Scene_H
+#define Scene_H
 #include <vector>
 #include "GameObject.h"
 
@@ -33,3 +35,4 @@ class LevelThreeuScene: Scene {
     vector<GameObject> objects;
 };
 
+#endif Scene_H

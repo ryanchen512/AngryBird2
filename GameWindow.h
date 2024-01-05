@@ -1,3 +1,5 @@
+#ifndef GAME_H
+#define GAME_H
 #include "Scene.h"
 
 class GameWindow
@@ -17,3 +19,5 @@ public:
 };
 
 
+
+#endif GAME_H

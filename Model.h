@@ -1,3 +1,5 @@
+#ifndef Model_H
+#define Model_H
 #include <map>
 #include <string>
 
@@ -26,3 +28,5 @@ private:
     map<string, Model&> modelMap;
     ModelRepositary();
 };
+
+#endif Model_H

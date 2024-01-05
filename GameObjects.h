@@ -1,3 +1,5 @@
+#ifndef GAMEOBJECT_H
+#define GAMEOBJECT_H
 #include <iostream>
 using namespace std;
 
@@ -16,3 +18,5 @@ class PhysicalObject: GameObject
 private:
     float velocity, acceleration;
 };
+
+#endif GAMEOBJECT_H
