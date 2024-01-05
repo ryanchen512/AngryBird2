@@ -15,23 +15,23 @@ public:
 
 };
 
-class MenuScene: Scene {
+class MenuScene: public Scene {
 private:
     vector<GameObject> objects;
 };
 
-class LevelOneuScene: Scene {
+class LevelOneuScene: public Scene {
     private:
     vector<GameObject> objects;
 };
 
-class LevelTwouScene: Scene {
+class LevelTwouScene: public Scene {
     private:
     vector<GameObject> objects;
 };
 
 
-class LevelThreeuScene: Scene {
+class LevelThreeuScene: public Scene {
     private:
     vector<GameObject> objects;
 };

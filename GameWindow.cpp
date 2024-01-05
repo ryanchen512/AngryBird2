@@ -2,11 +2,13 @@
 #include "Scenes.h"
 #include "Model.h"
 #include "global.h"
+
 ALLEGRO_DISPLAY* display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 ALLEGRO_TIMER *fps = NULL;
 bool key_state[ALLEGRO_KEY_MAX] = {false};
 const char *title = "angrybird";
+
 void GameWindow::game_init()
 {
     printf( "Game Initializing...\n" );
@@ -39,11 +41,7 @@ void GameWindow::game_init()
     ALLEGRO_BITMAP *icon = al_load_bitmap("./image/395637DD-F8DB-4529-ACDD-80206D72189D.png");
     al_set_display_icon(display, icon);
 
-    Scene initScene* = dynamic_cast<Scene*> (new MenuScene);
-    model.currentScene = initScene;
-
-    //Scene *initScene = new MenuScene;
-    //model.currentScene =  dynamic_cast<Scene*>(new MenuScene);
+    model.currentScene = *(dynamic_cast<Scene*> (new MenuScene));
 
     model.currentScene.init();
 }
@@ -51,9 +49,8 @@ void GameWindow::game_init()
 void GameWindow::game_play()
 {
     while (!model.isStopGame) {
-        currentScene.update();
-        currentScene.draw();
+        model.currentScene.update();
+        model.currentScene.draw();
     }
-
 }
 
