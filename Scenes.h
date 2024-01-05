@@ -9,8 +9,7 @@ public:
     virtual void init();
     virtual void update();
     virtual void draw();
-    virtual void process_event();
-    virtual void destroy();
+
 };
 
 class MenuScene: Scene { 

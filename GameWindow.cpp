@@ -1,4 +1,4 @@
-#include <GameWindow.h>
+#include "GameWindow.h"
 #include "Scene.h"
 #include "Model.h"
 #include "global.h"
@@ -42,11 +42,10 @@ void GameWindow::game_init()
 
 void GameWindow::game_play()
 {
-    while (!model.isStopGame){
-        currentScene.process_event();
+    while (!model.isStopGame) {
         currentScene.update();
         currentScene.draw();
     }
-
+    
 }
 
