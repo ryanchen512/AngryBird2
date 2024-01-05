@@ -13,7 +13,7 @@ class GameModel: Model
 {
 public:
     bool isStopGame = false;
-    Scene currentScene;
+    Scene &currentScene;
 };
 
 
