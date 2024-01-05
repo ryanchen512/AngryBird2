@@ -1,5 +1,5 @@
-#ifndef Model_H
-#define Model_H
+#ifndef MODEL_H
+#define MODEL_H
 #include <map>
 #include <string>
 
@@ -29,4 +29,4 @@ private:
     ModelRepositary();
 };
 
-#endif Model_H
+#endif MODEL_H
