@@ -6,6 +6,7 @@ using namespace std;
 class Scene
 {
 public:
+    virtual void init();
     virtual void update();
     virtual void draw();
     virtual void process_event();
