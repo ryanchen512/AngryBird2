@@ -5,16 +5,15 @@ class GameWindow
 public:
     void game_init();
     void game_play();
-    void game_update();
-    void game_draw();
 private:
-    Scene currentScene;
+    GameModel& model;
 };
 
 class GameModel: Model
 {
 public:
     bool isStopGame = false;
+    Scene currentScene;
 };
 
 

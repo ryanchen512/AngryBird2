@@ -5,15 +5,14 @@
 
 void GameWindow::game_init()
 {
-    al_init();
-    al_init_primitives_addon();
+    model = dynamic_cast<GameModel&> (ModelRepositary::shared.accessModel("game"));
+    model.currentScene = *(new MenuScene);
+    model.currentScene.init();
 }
 
-void game_play()
+void GameWindow::game_play()
 {
-    GameModel& model = dynamic_cast<GameModel&> (ModelRepositary::shared.accessModel("game"));
     while (!model.isStopGame) {
-        cleanWindow();
         currentScene.update();
         currentScene.draw();
     }
