@@ -1,7 +1,9 @@
+#include <vector>
+
 class Scene
 {
 public:
-    void update;
+    void update();
 private:
-    
+    vector<GameObject> sceneObjects;
 }
