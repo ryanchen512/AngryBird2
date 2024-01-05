@@ -10,5 +10,6 @@ int main()
     GameWindow game;
     game.game_init();
     game.game_play();
+    game.game_destroy();
     return 0;
 }
