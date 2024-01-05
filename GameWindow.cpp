@@ -42,7 +42,6 @@ void GameWindow::game_init()
     al_set_display_icon(display, icon);
 
     model.currentScene = *(dynamic_cast<Scene*> (new MenuScene));
-
     model.currentScene.init();
 }
 
