@@ -24,7 +24,6 @@ public:
     void game_destroy();
 private:
     GameModel &model= dynamic_cast<GameModel&> (ModelRepositary::shared.accessModel("game"));
-;
 };
 
 

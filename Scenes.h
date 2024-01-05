@@ -1,5 +1,5 @@
-#ifndef Scene_H
-#define Scene_H
+#ifndef SCENE_H
+#define SCENE_H
 #include <vector>
 #include "GameObjects.h"
 #include "global.h"
@@ -15,6 +15,7 @@ public:
 
 };
 
+<<<<<<< HEAD
 class MenuScene: Scene {
     public:
     void init();
@@ -22,21 +23,25 @@ class MenuScene: Scene {
     void process_event();
     void draw();
     private:
+=======
+class MenuScene: public Scene {
+private:
+>>>>>>> 9ce8e98a9718b1f0926be95a6bbea21d05aa6469
     vector<GameObject> objects;
 };
 
-class LevelOneuScene: Scene {
+class LevelOneuScene: public Scene {
     private:
     vector<GameObject> objects;
 };
 
-class LevelTwouScene: Scene {
+class LevelTwouScene: public Scene {
     private:
     vector<GameObject> objects;
 };
 
 
-class LevelThreeuScene: Scene {
+class LevelThreeuScene: public Scene {
     private:
     vector<GameObject> objects;
 };
