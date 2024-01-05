@@ -1,6 +1,6 @@
 
 #include <allegro5/allegro.h>
-#include <GameWindow.h>
+#include "GameWindow.h"
 
 
 using namespace std;
