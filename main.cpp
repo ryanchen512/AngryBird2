@@ -1,5 +1,7 @@
-#include <iostream>
+
 #include <allegro5/allegro.h>
+#include <GameWindow.h>
+
 
 using namespace std;
 
